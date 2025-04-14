@@ -3,6 +3,7 @@ mysql-5.7/
 **/build/
 build
 hl2sdk-css-bkp/
+hl2sdk-b/
 sourcemod/build/
 mmsource-1.12/build/
 hl2sdk-proxy-repo/
