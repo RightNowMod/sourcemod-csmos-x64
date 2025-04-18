@@ -1,0 +1,12 @@
+[submodule "hl2sdk-css"]
+	path = hl2sdk-css
+	url = https://github.com/RightNowMod/hl2sdk-css.git
+
+[submodule "mmsource-1.12"]
+	path = mmsource-1.12
+	url = https://github.com/RightNowMod/mmsource-1.12.git
+
+[submodule "sourcemod-1.12"]
+	path = sourcemod
+	url = https://github.com/RightNowMod/sourcemod-1.12.git
+

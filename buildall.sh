@@ -27,6 +27,7 @@ build_and_copy() {
     local PACKAGE_DIR="$BUILD_DIR/package"
     local IS_SOURCEMOD="$2"
     
+    mkdir -p "$BUILD_DIR"
     # 只有加了 -c 参数才删除 build 目录
     if [ "$DELETE_BUILD" = true ]; then
         rm -rf "$BUILD_DIR"
@@ -68,6 +69,11 @@ sed -i 's/_ZNV16CThreadFastMutex4LockEyj/_ZNV16CThreadFastMutex4LockEjj/g' "$CS_
 
 # 替换 sourcemod.2.css.so
 sed -i 's/_ZNV16CThreadFastMutex4LockEyj/_ZNV16CThreadFastMutex4LockEjj/g' "$CS_DIR/addons/sourcemod/bin/x64/sourcemod.2.css.so"
+
+
+sed -i 's/_ZNK9KeyValues7FindKeyEx/_ZNK9KeyValues7FindKeyEi/g' "$CS_DIR/addons/metamod/bin/linux64/metamod.2.css.so"
+
+sed -i 's/_ZNK9KeyValues7FindKeyEx/_ZNK9KeyValues7FindKeyEi/g' "$CS_DIR/addons/sourcemod/bin/x64/sourcemod.2.css.so"
 
 echo "构建和替换完成！"
 
